@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,400&family=DM+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <nav>
+        <a href="#about" class="logo">Matheus Oliveira</a>
+        <button id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="nav-links">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#education">Formação</a></li>
+          <li><a href="#projects">Portfólio</a></li>
+          <li><a href="#contact">Contato</a></li>
+          <li>
+            <button id="theme-toggle" aria-label="Alternar tema">
+              <span id="theme-icon">☀</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <p class="label">Sobre Mim</p>
+        <h1>Olá, sou <em>Matheus Oliveira</em></h1>
+        <p>
+          Sou desenvolvedor, modelador 3D e atualmente atuo como técnico de
+          química no laboratório de pesquisa e desenvolvimento da empresa
+          Tecpon.
+        </p>
+        <p>
+          Estou buscando uma mudança de carreira para a área dev e, em especial,
+          a área de game dev.
+        </p>
+        <a href="#contact" class="btn">Entre em Contato</a>
+      </section>
+
+      <section id="education">
+        <p class="label">Formação</p>
+        <h2>Trajetória <em>Acadêmica</em></h2>
+
+        <div class="timeline">
+          <div class="entry">
+            <span class="period">2025 — 2029</span>
+            <h3>Bacharelado em Ciência da Computação</h3>
+            <p>Universidade Uninter — Modalidade EAD</p>
+          </div>
+          <div class="entry">
+            <span class="period">2022</span>
+            <h3>
+              Conceitos e Aplicação da Cromotografia à Gás Acoplado a
+              Espectrometria de Massa
+            </h3>
+            <p>Universidade Unisinos — São Leopodo/RS</p>
+          </div>
+          <div class="entry">
+            <span class="period">2019 — 2023</span>
+            <h3>Ensino Médio e Técnico em Química</h3>
+            <p>
+              Instituto Fundação Escola Técnica Liberato Salzano Vieira da Cunha
+              — Novo Hamburgo/RS
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <p class="label">Portfólio</p>
+        <h2>Projetos <em>Selecionados</em></h2>
+
+        <div class="projects">
+          <article>
+            <div class="project-head">
+              <h3>Sincronização de Arquivos Locais no Notion</h3>
+              <span class="year">2026</span>
+            </div>
+            <p>
+              Implementação de um serviço que realiza a sincronização de aquivos
+              locais atráves de links no Notion. O projeto é composto por um
+              script que realiza a sincronização com a base de dados no Notion e
+              Outro script que roda um servidor local que recebe as solicitações
+              para abrir os arquivos locais.
+            </p>
+            <div class="project-links">
+              <a href="#">GitHub</a>
+            </div>
+          </article>
+
+          <article>
+            <div class="project-head">
+              <h3>Portifólio de Modelos 3D</h3>
+              <span class="year">2020 — Atual</span>
+            </div>
+            <p>
+              Portifólio contendo alguns modelos 3D e renders feitos por mim.
+            </p>
+            <div class="project-links">
+              <a href="#">GitHub</a>
+            </div>
+          </article>
+
+          <article>
+            <div class="project-head">
+              <h3>Site Portifólio</h3>
+              <span class="year">2026</span>
+            </div>
+            <p>
+              Site portifólio realizado como atividade curricular do bacharelado
+              de ciência da computação.
+            </p>
+            <div class="project-links">
+              <a href="#">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <p class="label">Contato</p>
+      <h2>Entre em <em>Contato</em></h2>
+      <p>Aberto a oportunidades, freelas e colaborações.</p>
+      <div class="contact-links">
+        <a href="mailto:math.sil.oli@gmail.com">math.sil.oli@gmail.com</a>
+        <a
+          href="https://www.linkedin.com/in/matheus-oliveira-124703181/"
+          target="_blank"
+          rel="noopener"
+          >LinkedIn</a
+        >
+        <a href="https://github.com/seuperfil" target="_blank" rel="noopener"
+          >GitHub</a
+        >
+      </div>
+
+      <div id="contact-form-wrap">
+        <div class="field">
+          <label for="f-name">Nome</label>
+          <input
+            id="f-name"
+            type="text"
+            placeholder="Seu nome"
+            autocomplete="name"
+          />
+          <span class="field-error" id="err-name"></span>
+        </div>
+        <div class="field">
+          <label for="f-email">E-mail</label>
+          <input
+            id="f-email"
+            type="email"
+            placeholder="seu@email.com"
+            autocomplete="email"
+          />
+          <span class="field-error" id="err-email"></span>
+        </div>
+        <div class="field">
+          <label for="f-msg">Mensagem</label>
+          <textarea
+            id="f-msg"
+            rows="5"
+            placeholder="Escreva sua mensagem…"
+          ></textarea>
+          <span class="field-error" id="err-msg"></span>
+        </div>
+        <button id="form-submit" class="btn">Enviar Mensagem</button>
+        <p id="form-success" hidden>✓ Mensagem enviada com sucesso!</p>
+      </div>
+
+      <p class="copy">© <span id="year"></span> Matheus Oliveira</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
